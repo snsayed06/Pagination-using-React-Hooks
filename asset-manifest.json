@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Pagination-using-React-Hooks/static/css/main.7591def3.chunk.css",
+    "main.js": "/Pagination-using-React-Hooks/static/js/main.757dcc63.chunk.js",
+    "main.js.map": "/Pagination-using-React-Hooks/static/js/main.757dcc63.chunk.js.map",
+    "runtime-main.js": "/Pagination-using-React-Hooks/static/js/runtime-main.a9b32b25.js",
+    "runtime-main.js.map": "/Pagination-using-React-Hooks/static/js/runtime-main.a9b32b25.js.map",
+    "static/js/2.7ee89ea2.chunk.js": "/Pagination-using-React-Hooks/static/js/2.7ee89ea2.chunk.js",
+    "static/js/2.7ee89ea2.chunk.js.map": "/Pagination-using-React-Hooks/static/js/2.7ee89ea2.chunk.js.map",
+    "index.html": "/Pagination-using-React-Hooks/index.html",
+    "precache-manifest.f5ea060fc69a8395e17dcf61ccca973d.js": "/Pagination-using-React-Hooks/precache-manifest.f5ea060fc69a8395e17dcf61ccca973d.js",
+    "service-worker.js": "/Pagination-using-React-Hooks/service-worker.js",
+    "static/css/main.7591def3.chunk.css.map": "/Pagination-using-React-Hooks/static/css/main.7591def3.chunk.css.map",
+    "static/js/2.7ee89ea2.chunk.js.LICENSE.txt": "/Pagination-using-React-Hooks/static/js/2.7ee89ea2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9b32b25.js",
+    "static/js/2.7ee89ea2.chunk.js",
+    "static/css/main.7591def3.chunk.css",
+    "static/js/main.757dcc63.chunk.js"
+  ]
+}
