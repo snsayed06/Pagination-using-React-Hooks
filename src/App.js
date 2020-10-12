@@ -1,19 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import Posts from './components/Posts';
-import Pagination from './components/Pagination';
-import axios from 'axios';
-import './App.css';
+import React, { useState, useEffect } from "react";
+// Pagination
+import Posts from "./components/pagination/Posts";
+import Pagination from "./components/pagination/Pagination";
+// Progress Bar
+import ProgressBar from "./components/progressBar/ProgressBar";
+//Api cal
+import axios from "axios";
+//CSS
+import "./App.css";
 
 const App = () => {
+  // pagination state
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(10);
+  // progress Bar state
+  const [completed, setCompleted] = useState(0);
+  useEffect(() => {
+    setInterval(() => setCompleted(Math.floor(Math.random() * 100) + 1), 2000);
+  }, []);
 
+  // get data into posts
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      const res = await axios.get('https://jsonplaceholder.typicode.com/posts');
+      const res = await axios.get("https://jsonplaceholder.typicode.com/posts");
       setPosts(res.data);
       setLoading(false);
     };
@@ -27,7 +39,7 @@ const App = () => {
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
   // Change page
-  const paginate = pageNumber => setCurrentPage(pageNumber);
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div className='container mt-5'>
@@ -38,6 +50,7 @@ const App = () => {
         totalPosts={posts.length}
         paginate={paginate}
       />
+      <ProgressBar bgcolor={"#6a1b9a"} completed={completed} />
     </div>
   );
 };
