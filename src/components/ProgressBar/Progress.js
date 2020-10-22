@@ -1,8 +1,8 @@
 import React from "react";
 // import { FaFileExcel } from "react-icons/fa";
 
-const ProgressBar = (props) => {
-  const { bgcolor, completed } = props;
+const ProgressBar = ({ bgcolor, completed }) => {
+  // const { bgcolor, completed } = props;
 
   const containerStyles = {
     height: 20,
